@@ -75,7 +75,8 @@ cytof_dimReduction <- function(data,
                tsne_out <- Rtsne(marker_filtered_data, initial_dims = ncol(marker_filtered_data), 
                                  dims = 2, 
                                  check_duplicates = FALSE, 
-                                 pca = TRUE, ...)
+                                 pca = TRUE, 
+                                 num_cores=0, ...)
                mapped <- tsne_out$Y
            },
            pca={
