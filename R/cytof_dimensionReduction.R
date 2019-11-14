@@ -76,7 +76,7 @@ cytof_dimReduction <- function(data,
                                  dims = 2, 
                                  check_duplicates = FALSE, 
                                  pca = TRUE, 
-                                 num_cores=0, ...)
+                                 num_threads=0, ...)
                cat("new function")
                mapped <- tsne_out$Y
            },
